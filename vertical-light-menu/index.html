@@ -60,14 +60,14 @@
             letter-spacing: 0.02em;
         }
 
-        #editLeadForm .form-control {
+        /* #editLeadForm .form-control {
             border: 1px solid #dedede !important;
             border-radius: 5px !important;
             box-shadow: none !important;
             font-weight: 500;
             color: #23272b;
             background: #fff;
-        }
+        } */
 
         .modal-content .modal-body a:not(.btn) {
             color: #3b3f5c;
@@ -108,7 +108,7 @@
                 </li>
             </ul>
 
-            <div class="search-animated toggle-search">
+            <!-- <div class="search-animated toggle-search">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="feather feather-search">
@@ -127,7 +127,7 @@
                     </div>
                 </form>
                 <span class="badge badge-secondary">Ctrl + /</span>
-            </div>
+            </div> -->
 
             <ul class="navbar-item flex-row ms-lg-auto ms-0 action-area">
 
@@ -516,13 +516,13 @@
                                         <nav class="breadcrumb-style-one" aria-label="breadcrumb">
                                             <ol class="breadcrumb">
                                                 <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                                                <li class="breadcrumb-item active" aria-current="page">Analytics</li>
+                                                <li class="breadcrumb-item active" aria-current="page">InHouse</li>
                                             </ol>
                                         </nav>
 
                                     </div>
                                 </div>
-                                <ul class="navbar-nav flex-row ms-auto breadcrumb-action-dropdown">
+                                <!-- <ul class="navbar-nav flex-row ms-auto breadcrumb-action-dropdown">
                                     <li class="nav-item more-dropdown">
                                         <div class="dropdown  custom-dropdown-icon">
                                             <a class="dropdown-toggle btn" href="#" role="button" id="customDropdown"
@@ -614,7 +614,7 @@
 
                                         </div>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </header>
                         </div>
                     </div>
@@ -625,7 +625,8 @@
                         <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
                             <div class="statbox widget box box-shadow">
                                 <div class="widget-content widget-content-area">
-                                    <table id="html5-extension" class="table dt-table-hover" style="width:100%">
+                                    <div class="table-responsive-mobile">
+                                        <table id="html5-extension" class="table dt-table-hover" style="width:100%">
                                         <thead>
                                             <tr>
                                                 <th>Lead Name</th>
@@ -1034,7 +1035,33 @@
                                                 </td>
                                             </tr>
                                         </tbody>
-                                    </table>
+                                        </table>
+                                    </div>
+                                </div>
+                                <style>
+                                    @media (max-width: 767.98px) {
+                                    .table-responsive-mobile {
+                                        overflow-x: auto;
+                                        -webkit-overflow-scrolling: touch;
+                                    }
+                                    .table-responsive-mobile table {
+                                        min-width: 700px;
+                                    }
+                                    .table-responsive-mobile th:first-child,
+                                    .table-responsive-mobile td:first-child {
+                                        position: sticky;
+                                        left: 0;
+                                        background: #eff3fce6;
+                                        z-index: 2;
+                                        box-shadow: 2px 0 5px -2px rgba(0,0,0,0.05);
+                                    }
+                                    .table-responsive-mobile th:first-child {
+                                        z-index: 3;
+                                        position: sticky !important;
+                                        background: #eaf1ff;
+                                    }
+                                    }
+                                </style>
                                 </div>
                             </div>
                         </div>
