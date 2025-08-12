@@ -459,7 +459,7 @@
 
                 <ul class="list-unstyled menu-categories" id="accordionExample">
 
-                    <li class="menu">
+                    <!-- <li class="menu">
                         <a href="./index.html" aria-expanded="false" class="dropdown-toggle">
                             <div class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -472,9 +472,31 @@
                                 <span>InHouse</span>
                             </div>
                         </a>
+                    </li> -->
+
+                    <li class="menu">
+                        <a href="./index.html" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <!-- Replaced SVG with Font Awesome dashboard icon -->
+                                <i class="fa-solid fa-desktop"
+                                    style="font-size: 1.3em; color: #0d6efd99; vertical-align: middle; margin-right: 8px;"></i>
+                                <span>InHouse</span>
+                            </div>
+                        </a>
                     </li>
 
                     <li class="menu active">
+                        <a href="sales.html" aria-expanded="true" class="dropdown-toggle">
+                            <div class="">
+                                <!-- Replaced SVG with Font Awesome sales icon -->
+                                <i class="fa-solid fa-chart-line"
+                                    style="font-size: 1.3em; color: #0d6efd99; vertical-align: middle; margin-right: 8px;"></i>
+                                <span>Sales</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- <li class="menu active">
                         <a href="sales.html" aria-expanded="true" class="dropdown-toggle">
                             <div class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -487,7 +509,7 @@
                                 <span>Sales</span>
                             </div>
                         </a>
-                    </li>
+                    </li> -->
 
                     <li class="menu">
                         <a href="blank-page.html" aria-expanded="false" class="dropdown-toggle">
@@ -941,7 +963,8 @@
                                                                 <div class="modal-content">
                                                                     <div class="modal-header" id="inputFormModalLabel">
                                                                         <h5 class="modal-title text-start w-100"
-                                                                            style="text-align:left;">Follow-Up <b>Lead</b>
+                                                                            style="text-align:left;">Follow-Up
+                                                                            <b>Lead</b>
                                                                         </h5>
                                                                         <button type="button" class="btn-close"
                                                                             data-bs-dismiss="modal" aria-hidden="true">
@@ -976,7 +999,8 @@
                                                                                 <div class="col-md-6">
                                                                                     <label for="editLeadNumber"
                                                                                         class="form-label text-start w-100"
-                                                                                        style="text-align:left;">Connection Status</label>
+                                                                                        style="text-align:left;">Connection
+                                                                                        Status</label>
                                                                                     <input type="text"
                                                                                         class="form-control"
                                                                                         id="editLeadNumber"
@@ -987,7 +1011,8 @@
                                                                                 <div class="col-md-6">
                                                                                     <label for="editCity"
                                                                                         class="form-label text-start w-100"
-                                                                                        style="text-align:left;">Calling Status</label>
+                                                                                        style="text-align:left;">Calling
+                                                                                        Status</label>
                                                                                     <input type="text"
                                                                                         class="form-control"
                                                                                         id="editCity" name="city"
@@ -996,7 +1021,8 @@
                                                                                 <div class="col-md-6">
                                                                                     <label for="editState"
                                                                                         class="form-label text-start w-100"
-                                                                                        style="text-align:left;">Calling Date</label>
+                                                                                        style="text-align:left;">Calling
+                                                                                        Date</label>
                                                                                     <input type="text"
                                                                                         class="form-control"
                                                                                         id="editState" name="state"
@@ -1007,7 +1033,8 @@
                                                                                 <div class="col-md-6">
                                                                                     <label for="editInvestmentSlab"
                                                                                         class="form-label text-start w-100"
-                                                                                        style="text-align:left;">Pitch Drop</label>
+                                                                                        style="text-align:left;">Pitch
+                                                                                        Drop</label>
                                                                                     <input type="text"
                                                                                         class="form-control"
                                                                                         id="editInvestmentSlab"
@@ -1025,7 +1052,8 @@
                                                                                 <div class="col-md-6">
                                                                                     <label for="editSpoc"
                                                                                         class="form-label text-start w-100"
-                                                                                        style="text-align:left;">Discovery Status</label>
+                                                                                        style="text-align:left;">Discovery
+                                                                                        Status</label>
                                                                                     <input type="text"
                                                                                         class="form-control"
                                                                                         id="editSpoc" name="spoc"
@@ -2019,8 +2047,9 @@
                 <div class="modal-header" id="addLeadModalLabel">
                     <h5 class="modal-title text-start w-100" style="text-align:left;">Add <b>Lead</b></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">
-                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
                             <line x1="18" y1="6" x2="6" y2="18"></line>
                             <line x1="6" y1="6" x2="18" y2="18"></line>
                         </svg>
@@ -2411,51 +2440,51 @@
     </div>
 
     <div class="modal fade" id="leadInfoModal" tabindex="-1" aria-labelledby="leadInfoModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="leadInfoModalLabel">Lead Information</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="row mb-2">
-                    <div class="col-md-6 mb-2">
-                        <strong>Lead Name:</strong>
-                        <span class="fw-bold text-primary ms-1">Tiger Nixon</span>
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="leadInfoModalLabel">Lead Information</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-2">
+                        <div class="col-md-6 mb-2">
+                            <strong>Lead Name:</strong>
+                            <span class="fw-bold text-primary ms-1">Tiger Nixon</span>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <strong>Lead Number:</strong>
+                            <span class="fw-bold text-primary ms-1">9876543210</span>
+                        </div>
                     </div>
-                    <div class="col-md-6 mb-2">
-                        <strong>Lead Number:</strong>
-                        <span class="fw-bold text-primary ms-1">9876543210</span>
+                    <div class="row mb-2">
+                        <div class="col-md-6 mb-2">
+                            <strong>City:</strong>
+                            <span class="fw-bold text-primary ms-1">Mumbai</span>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <strong>State:</strong>
+                            <span class="fw-bold text-primary ms-1">Maharashtra</span>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-md-4 mb-2">
+                            <strong>Investment Slab:</strong>
+                            <span class="fw-bold text-primary ms-1">10 Lacs</span>
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <strong>Source:</strong>
+                            <span class="fw-bold text-primary ms-1">Website Form</span>
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <strong>Spoc:</strong>
+                            <span class="fw-bold text-primary ms-1">Amit Shah</span>
+                        </div>
                     </div>
                 </div>
-                <div class="row mb-2">
-                    <div class="col-md-6 mb-2">
-                        <strong>City:</strong>
-                        <span class="fw-bold text-primary ms-1">Mumbai</span>
-                    </div>
-                    <div class="col-md-6 mb-2">
-                        <strong>State:</strong>
-                        <span class="fw-bold text-primary ms-1">Maharashtra</span>
-                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light-danger" data-bs-dismiss="modal">Close</button>
                 </div>
-                <div class="row mb-2">
-                    <div class="col-md-4 mb-2">
-                        <strong>Investment Slab:</strong>
-                        <span class="fw-bold text-primary ms-1">10 Lacs</span>
-                    </div>
-                    <div class="col-md-4 mb-2">
-                        <strong>Source:</strong>
-                        <span class="fw-bold text-primary ms-1">Website Form</span>
-                    </div>
-                    <div class="col-md-4 mb-2">
-                        <strong>Spoc:</strong>
-                        <span class="fw-bold text-primary ms-1">Amit Shah</span>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-light-danger" data-bs-dismiss="modal">Close</button>
-            </div>
 
 </body>
 
